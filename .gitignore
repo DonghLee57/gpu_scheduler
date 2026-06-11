@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+gpusched.db
+gpusched.db-journal
+gpusched.db-wal
+gpusched.db-shm
+gpusched.log
+gpusched.pid
+logs/
+test_home/
+.idea/
+.vscode/
+
+report.md
+
+# Python packaging/build artifacts
+*.egg-info/
+build/
+dist/

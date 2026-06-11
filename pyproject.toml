@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpu-scheduler"
+version = "0.1.0"
+description = "A lightweight, user-space, resource-aware GPU task scheduler with peak VRAM auto-estimation and OOM watchdog protection."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "DonghLee57", email = "23444273+DonghLee57@users.noreply.github.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+gpusched = "gpu_scheduler.cli:main"
+
+[tool.setuptools]
+packages = ["gpu_scheduler"]
